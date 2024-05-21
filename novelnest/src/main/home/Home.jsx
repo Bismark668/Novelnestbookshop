@@ -1,9 +1,12 @@
 import React from 'react'
+import Example from './Navbar'
+import Body from './Body'
 
 function Home() {
   return (
     <div>
-        This is my Home Page
+        <Example />
+        <Body />
     </div>
   )
 }
