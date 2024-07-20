@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    li{
+      @apply p-5
+    }
+  
+    ul{
+      padding: 0;
+      list-style-type: none;
+    }
+  
+    .line-brake{
+      white-space: pre-wrap;
+    }
+  }

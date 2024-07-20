@@ -41,7 +41,10 @@ export default class Login extends Component {
 
           <div className="notify-div">
            <p>Don't have an acount ?</p>
-            <a href="/register"><button>Sign-Up</button></a>
+           <Link to={'/register'}>
+              <button>Sign-Up</button>
+           </Link>
+            
           </div>
 
         </div>
@@ -76,7 +79,7 @@ export default class Login extends Component {
                 </button>
               </Link>
 
-              <p>Forgot your password ? <a href="/forgotPassword">Click Here</a></p>
+              <p>Forgot your password ? <Link to={'/forgotPassword'}>Click here</Link></p>
             </div>
           </form>
         </div>

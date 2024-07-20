@@ -50,17 +50,17 @@ export default class ForgetPass extends Component {
                     </div>
                 </form>
 
-                <Link to={'/'}>
+                <Link to={'/login'}>
                     <button type='submit' className='sub-btn'>
                       Submit
                     </button>
                 </Link>
 
                 <div className="back">
-                    <a href="/">
+                    <Link to={'/login'}>
                         <GoChevronLeft  className='icn'/>
-                        Back to Login
-                    </a>
+                         Back to Login
+                    </Link>
                 </div>
             </div>
         </div>

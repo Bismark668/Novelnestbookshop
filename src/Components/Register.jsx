@@ -56,7 +56,7 @@ export default class Register extends Component {
              </div>
             <div className='notify-div'>
                 <p>Already have an acount ?</p>
-                <a href="/"><button>Sign-in</button></a>
+                <Link to={'/login'}><button>Sign-in</button></Link>
              </div>
         </div>
 
@@ -99,7 +99,7 @@ export default class Register extends Component {
                             <input type="password" id='password' placeholder='Confirm Password'/>
                         </div>
                     </div>
-                    <Link to={'/'}>
+                    <Link to={'/login'}>
                         <button type='submit' className='btn'>
                             Sign-up
                             <FaRegArrowAltCircleRight />
