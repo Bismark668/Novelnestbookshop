@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <div className='w-full bg-[#428563]  text-gray-300 py-2 px-2 mt-5 sm:mt-[10rem] '>
+    <div className='w-full bg-[#082517]  text-gray-300 py-2 px-2 mt-5 sm:mt-[10rem] md:mt-[15rem] '>
         <div className="max-w-[1240px] mx-auto flex flex-col sm:flex-row justify-between items-center  border-b-2 border-gray-500 py-4">
             <div className='flex flex-col items-center gap-2 py-8 px-2'>
                 <NavLink to={'/'}>
@@ -23,7 +23,7 @@ export const Footer = () => {
 
             <div className='w-full flex flex-col px-10 items-center sm:items-end overflow-hidden '>
                 <h1 className='font-bold uppercase pb-2 mr-4 text-white'>Subscibe to our newsletter </h1>
-                <p className='pb-2 text-white mr-4'>Get our latest books,stores and resources sent to your inbox weekly</p>
+                <p className='pb-2 text-white mr-4'>Get our latest books,stories and resources sent to your inbox weekly</p>
                <form className='flex'>
                     <input className='min-w-[200px] p-2 mr-4 rounded-md mb-4 ' type="email" placeholder='Enter Email' />
                     <button className='p-2 mr-4 rounded-md mb-4 bg-[#00B86E]'>Subscibe</button>

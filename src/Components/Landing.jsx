@@ -19,7 +19,7 @@ export const Landing = () => {
     const [openMenu , setOpenmenu]=useState(false)
 
   return (
-    <div className='w-full min-h-[100vh]'>
+    <div className='w-full min-h-[100vh] bg'>
         <div className="mx-auto  min-h-[100px] overflow-hidden bg-green-600 md:relative flex flex-row md:flex-row md:justify-between gap-y-4 md:gap-y-0 ">
             <div className="flex justify-start items-center md:justify-normal">
                 <Link className='flex items-center gap-3 m-0 px-4 ' to={'/'}>
@@ -120,7 +120,7 @@ export const Landing = () => {
                         <div className="w-full h-full bg-white rounded-xl items-center flex flex-col gap-1 py-2 px-1">
                             <FaBookBible  className='size-10'/>
                             <h2 className='text-xl font-semibold'>Religious</h2>
-                            <p className='text-gray-500 font-light px-1'>Enhance your imaginations with our fictional characters and storis that will live you joy </p>
+                            <p className='text-gray-500 font-light px-1'>Whether you are seeking to deepen your own faith, understand the spiritual perspectives of others, We get the books just for you </p>
                             <Link to={'/login'}>
                              <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Explore</button>
                             </Link>
@@ -128,7 +128,7 @@ export const Landing = () => {
                         <div className="w-full h-full bg-white rounded-xl items-center flex flex-col gap-1 py-2 px-1">
                             <FaRegSmile className='size-10'/>
                             <h2 className='text-xl font-semibold'>Comic</h2>
-                            <p className='text-gray-500 font-light px-1'>Enhance your imaginations with our fictional characters and storis that will live you joy </p>
+                            <p className='text-gray-500 font-light px-1'>Whether you are a longtime fan or new to the world of comics, this genre invites you to experience the limitless possibilities of visual storytelling.  </p>
                             <Link to={'/login'}>
                              <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Explore</button>
                             </Link>

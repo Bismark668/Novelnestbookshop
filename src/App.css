@@ -9,7 +9,7 @@
 .login-page{
   width: 100dvw;
   height: 100dvh;
-  background-image: url("https://images.unsplash.com/photo-1568667256549-094345857637?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("./assets/landimg.avif");
   margin: auto;
   background-position: center;
   background-size: cover;
@@ -276,6 +276,13 @@
     align-self: center;
   }
 }
+
+.books-banner{
+  background-image: url("./assets/landimg.avif");
+  background-position: center;
+  background-size: cover;
+}
+
 
 
 @media screen and (max-width:650px){
