@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/logo.png'
-import banner from '../assets/landimg.avif'
+import Home from '../assets/homeimg.jpg'
 import { useState } from 'react';
 import menu from '../assets/menuicon.png'
 import close from '../assets/closeicon.png'
@@ -65,7 +65,7 @@ export const Landing = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <img className=' object-cover w-full' src={banner} alt="hero-image" />
+                    <img className=' object-cover w-full' src={Home} alt="hero-image" />
                 </div>
             </div>
 
