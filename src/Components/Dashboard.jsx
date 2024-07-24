@@ -21,8 +21,8 @@ const Dashboard = () => {
       </div>
 
       <div className="w-full h-[500px] sm:h-[400px] books-banner flex flex-col items-center justify-center gap-5 px-5">
-        <h1 className='text-white uppercase font-extrabold text-2xl'>Search For your book</h1>
-        <p className='text-white'>We have in istock all the books you can think of! , just type the name and we will find it for you in a matter of seconds</p>
+        <h1 className='text-white uppercase font-extrabold text-2xl shadow-md'>Search For your book</h1>
+        <p className='text-white text-xl shadow-xl'>We have in istock all the books you can think of! , just type the name and we will find it for you in a matter of seconds</p>
         <div className="md:w-[35rem] md:h-[3rem] bg-white flex items-center justify-center gap-5 px-10 py-3.5 rounded-xl">
           <input className='w-[90%] py-3 outline-none font-semibold' v type="text" 
          placeholder='Enter book name'/>

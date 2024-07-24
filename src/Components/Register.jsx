@@ -100,7 +100,7 @@ export default class Register extends Component {
                         </div>
                     </div>
                     <Link className='w-[70%]' to={'/login'}>
-                        <button  className=' self-center text-white flex items-center justify-evenly w-[80%] m-auto bg-green-500 outline-none rounded-lg cursor-pointer text-xl px-3 py-2'  type='submit' className='btn'>
+                        <button  className=' self-center text-white flex items-center justify-evenly w-[80%] m-auto bg-green-500 outline-none rounded-lg cursor-pointer text-xl px-3 py-2'  type='submit'>
                             Sign-up
                             <FaRegArrowAltCircleRight />
                         </button>
