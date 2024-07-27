@@ -13,7 +13,7 @@ const Books = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('https://openlibrary.org/subjects/love.json?limit=20');
+        const response = await axios.get('https://openlibrary.org/subjects/love.json?limit=30');
         setBooks(response.data.works);
         setLoading(false);
       } catch (error) {
