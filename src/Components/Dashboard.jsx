@@ -72,8 +72,7 @@ const Dashboard = () => {
 
       {/* Banner */}
       <div className="w-full h-[500px] sm:h-[400px] books-banner flex flex-col items-center justify-center gap-5 px-5">
-        <h1 className='text-white uppercase font-extrabold text-2xl'>Search For Your Book</h1>
-        <p className='text-white'>We have in stock all the books you can think of! Just type the name and we will find it for you in a matter of seconds.</p>
+
         <div className="md:w-[35rem] md:h-[3rem] bg-white flex items-center justify-center gap-5 px-10 py-3.5 rounded-xl">
           <input className='w-[90%] py-3 outline-none font-semibold' type="search" placeholder='Enter book name' />
           <button type='submit' className='flex items-center px-4 py-1'>

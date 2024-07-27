@@ -36,8 +36,8 @@ const BookDetail = () => {
     const getDescription = (description) => {
       if (!description) return 'No description available';
       const words = description.split(' ');
-      if (words.length > 600) {
-        return words.slice(0, 600).join(' ') + '...';
+      if (words.length > 300) {
+        return words.slice(0, 300).join(' ') + '...';
       }
       return description;
     };
