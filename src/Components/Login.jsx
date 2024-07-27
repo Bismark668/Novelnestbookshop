@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 import { FaUser } from "react-icons/fa";
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
@@ -40,7 +40,7 @@ export default class Login extends Component {
           </div>
 
           <div className="notify-div">
-           <p>Don't have an acount ?</p>
+           <p>Dont have an acount ?</p>
            <Link to={'/register'}>
               <button>Sign-Up</button>
            </Link>
@@ -60,7 +60,7 @@ export default class Login extends Component {
                 <label htmlFor="Username">Username</label>
                 <div className="input">
                   <FaUser/>
-                  <input type="text" id='Username' value={this.state.UserName} onChange={this.handleUserNameailChange} placeholder='Enter Username'/>
+                  <input type="text" id='Username' value={this.state.UserName} onChange={this.handleUserNameailChange} placeholder='Username'/>
                 </div>
               </div>
 
@@ -68,9 +68,9 @@ export default class Login extends Component {
                 <label htmlFor="Password">Password</label>
                 <div className="input">
                  <FaUnlockKeyhole />
-                  <input type="password" id='password' value={this.state.Password} onChange={this.handlePasswordChange} placeholder='Enter password'/>
+                  <input type="password" id='password' value={this.state.Password} onChange={this.handlePasswordChange} placeholder='Password'/>
                 </div>
-              </div>
+              </div> <br />
 
               <Link to={'/dashboard'}>
                 <button className='btn'>
@@ -79,7 +79,7 @@ export default class Login extends Component {
                 </button>
               </Link>
 
-              <p>Forgot your password ? <Link to={'/forgotPassword'}>Click here</Link></p>
+              <p>Forgot your password ? <Link to={'/forgotPassword'}><span className='f-password'>Click here</span></Link></p>
             </div>
           </form>
         </div>

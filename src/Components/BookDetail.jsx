@@ -1,5 +1,4 @@
-// src/BookDetail.js
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Loading } from './Loading';
@@ -14,7 +13,7 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`https://openlibrary.org/works/${id}.json`);
+        const response = await axios.get(`https:openlibrary.org/works/${id}.json`);
         setBook(response.data);
         setLoading(false);
       } catch (error) {
@@ -31,7 +30,7 @@ const BookDetail = () => {
 
   const coverId = book.covers ? book.covers[0] : null;
   const coverImageUrl = coverId
-    ? `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`
+    ? `https:covers.openlibrary.org/b/id/${coverId}-L.jpg`
     : 'https://via.placeholder.com/150?text=404+No+Cover';
 
     const getDescription = (description) => {
@@ -50,6 +49,8 @@ const BookDetail = () => {
       : 'No description available';
 
 
+
+
   return (
     <div className='w-full min-h-[100vh] px-2 py-5 bg-gray-200'>
       <button className="py-3 px-4  mb-5 text-xl font-light text-green-900 focus:outline-none bg-none  rounded-xl border border-green-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-green-600 dark:hover:text-white dark:hover:bg-gray-700" onClick={() => navigate(-1)}>&larr; Back to Books</button>
@@ -60,11 +61,13 @@ const BookDetail = () => {
         </div>
         <div className='w-full h-full p-2 flex flex-col items-start gap-2'>
           <p className='text-blue-800 text-xl pb-2'>Author: {book.authors ? book.authors.map((author) => author.name).join(', ') : 'N/A'}</p>
-          <p className='text-xl'>{getDescription(descriptionText)}</p>
+          <p className='text-xl text-black'>{getDescription(descriptionText)}</p>
+          <br />
+          <button className='bg-green-600 w-32 h-14 text-white rounded-lg' onClick={() => navigate(-1)} >Get Book</button>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default BookDetail;
+export default BookDetail
