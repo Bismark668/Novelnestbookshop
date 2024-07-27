@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Example from './Navbar'
 import Body from './Body'
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 import { FaUser } from "react-icons/fa";
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
@@ -39,8 +39,7 @@ export default class Login extends Component {
             <h1 className='text-2xl font-extrabold text-green-300 '>Explore,Buy and read all kinds of books</h1> 
           </div>
 
-          <div className="notify-div flex absolute items-center w-[90%] bottom-3  border border-white rounded-xl justify-between overflow-hidden p-2">
-           <p className='text-blue-800 font-extrabold text-xl'>Don't have an acount ?</p>
+
            <Link to={'/register'}>
               <button className='text-white bg-green-500 border-none outline-none cursor-pointer p-2 text-xl rounded-md'>Sign-Up</button>
            </Link>
@@ -58,7 +57,7 @@ export default class Login extends Component {
                 <label className='text-black block py-1 text-xl' htmlFor="Username">Username</label>
                 <div className="flex gap-2 p-2 bg-white">
                   <FaUser/>
-                  <input className='bg-none outline-none border-none min-w-[250px]' type="text" id='Username' value={this.state.UserName} onChange={this.handleUserNameailChange} placeholder='Enter Username'/>
+
                 </div>
               </div>
 
@@ -66,9 +65,9 @@ export default class Login extends Component {
                 <label className='text-black block py-1 text-xl' htmlFor="Password">Password</label>
                 <div className="flex gap-2 p-2 bg-white">
                  <FaUnlockKeyhole />
-                  <input className='bg-none outline-none border-none min-w-[250px]' type="password" id='password' value={this.state.Password} onChange={this.handlePasswordChange} placeholder='Enter password'/>
+
                 </div>
-              </div>
+              </div> <br />
 
               <Link className='w-[70%]' to={'/dashboard'}>
                 <button className=' self-center text-white flex items-center justify-evenly w-[80%] m-auto bg-green-500 outline-none rounded-lg cursor-pointer text-xl px-3 py-2'>
@@ -76,8 +75,6 @@ export default class Login extends Component {
                   <FaRegArrowAltCircleRight />
                 </button>
               </Link>
-
-              <p>Forgot your password ? <Link className='text-blue-600 text-xl' to={'/forgotPassword'}>Click here</Link></p>
             </div>
           </form>
         </div>
