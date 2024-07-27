@@ -1,5 +1,4 @@
-import React from 'react'
-import LoadingImg from '../assets/loading.svg'
+import LoadingImg from '../assets/ripple.svg'
 
 export const Loading = () => {
   return (

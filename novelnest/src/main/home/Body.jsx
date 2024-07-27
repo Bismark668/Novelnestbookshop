@@ -1,8 +1,8 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
-import facebook from '../assets/facebook.svg'
-import snapchat from '../assets/snapchat.svg'
-import instagram from '../assets/instagram.svg'
-import twitter from '../assets/twitter.svg'
+// import facebook from '../assets/facebook.svg'
+// import snapchat from '../assets/snapchat.svg'
+// import instagram from '../assets/instagram.svg'
+// import twitter from '../assets/twitter.svg'
 
 const includedFeatures = [
   'Private forum access',
@@ -18,7 +18,7 @@ export default function Body() {
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Welcome dear Reader,</h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            We provide you with all the best children's books, Novels and other categories of books
+            We provide you with all the best childrens books, Novels and other categories of books
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2x1 rounded-3xl ring-2 ring-w-20 ring-bg-gradient-to-r from-sky-500 to-cyan-500 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -44,9 +44,9 @@ export default function Body() {
               ))}
             </ul>
             <br />
-            <span class="relative flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
             </span>
             <span className="inline-flex items-center rounded-md px-2 py-1 text-xs hover:text-indigo-400 cursor-pointer font-medium text-cyan-400 hover:ring-2 ring-1 ring-inset ring-cyan-400">
                 Subscribe
@@ -79,10 +79,10 @@ export default function Body() {
       </div>
       <div className='text-gray-200 mt-5 text-center'> For more information, you can reach us on our social media handles..... </div>
       <div className='text-cyan-400 text-center mt-5 flex justify-center items-center'>
-        <img src={facebook} alt='Facebook' className='ml-30 hover:scale-110 cursor-pointer w-8 h-8 '/> 
+        {/* <img src={facebook} alt='Facebook' className='ml-30 hover:scale-110 cursor-pointer w-8 h-8 '/> 
         <img src={snapchat} alt='Snapchat' className='hover:scale-110 cursor-pointer w-8 h-8 ml-10 ' />
         <img src={instagram} alt='Instagram' className='hover:scale-110 cursor-pointer w-8 h-8 ml-10' />
-        <img src={twitter} alt='Twitter' className='hover:scale-110 cursor-pointer w-8 h-8 ml-10' />
+        <img src={twitter} alt='Twitter' className='hover:scale-110 cursor-pointer w-8 h-8 ml-10' /> */}
       </div>
     </div>
   )
